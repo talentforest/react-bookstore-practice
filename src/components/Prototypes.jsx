@@ -1,10 +1,9 @@
 import styles from "../css/Prototypes.module.css"
-import { useContext } from 'react';
-import AppStateContext from '../contexts/AppStateContext';
+import usePrototypes from '../hooks/usePrototypes';
 
 export default function Prototypes() {
-  const { prototypes } = useContext(AppStateContext);
-  // AppStateContext를 통해 useContext로 자식에 넣을 밸류로 지정해둔 객체인 prototypes 데이터를 가져온다.
+  const prototypes = usePrototypes();
+  // usePrototypes라는 커스텀 훅을 만들었으니까...
   return (
     <div className={styles.prototypes}>
       {prototypes.map((prototype) => {
