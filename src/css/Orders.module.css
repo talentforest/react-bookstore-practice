@@ -1,0 +1,19 @@
+.orders {
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+.box {
+  width: 90%;
+  height: 30%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgba(122, 122, 122, 0.8);
+  border-radius: 10px;
+}
+.none {
+  display: block;
+  margin-top: 10px;
+  font-size: 700;
+  line-height: 1.5;
+}

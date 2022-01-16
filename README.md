@@ -1,1 +1,3 @@
-# react-bookstore-practice
+# Create Bookstore Page with React
+
+### This is Jellie Bookstore Page 
