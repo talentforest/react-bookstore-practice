@@ -94,6 +94,27 @@ const AppStateProvider = ({children}) => {
   // 주문서에 추가하는 함수
   const addToOrder = useCallback((title) => {
     // 어떤 상품을 넣을 것인지 알려주는 것으로 title인자를 넣을 것임.
+    // orders라는 상태에 addToOrder가 실행되면
+    // [{title, quantity:1}]가 만들어지도록
+    setOrders(orders => {
+      // 해당 타이틀이 주문서 있는지 확인하고 있으면 quantity를 올리고 없으면 배열에 객체를 추가
+      const finded = orders.find(order => order.title === title);
+      
+      if(finded === undefined) {
+        return [...orders, {title, quantity: 1}];
+      } else {
+        return orders.map(order => {
+          if (order.title === title) {
+            return {
+              title,
+              quantity: order.quantity + 1,
+            } 
+          } else {
+            return order;
+          }
+        });
+      }
+    });
   }, []);
   const remove = useCallback((title) => {
     // 해당 주문 취소 - 어떤 상품을 뺄 것인지 알려주는 것으로 title인자를 넣을 것임.

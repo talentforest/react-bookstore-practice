@@ -2,13 +2,14 @@
   display: flex;
   justify-content: center;
   width: 20%;
+  background-color: rgb(85, 120, 151);
 }
 .box {
   width: 90%;
-  height: 30%;
-  padding: 10px;
+  height: fit-content;
+  padding: 5px;
   box-sizing: border-box;
-  background-color: rgba(122, 122, 122, 0.8);
+  background-color: rgba(206, 206, 206, 0.8);
   border-radius: 10px;
 }
 .none {
@@ -16,4 +17,38 @@
   margin-top: 10px;
   font-size: 700;
   line-height: 1.5;
+}
+.items {
+  padding: 4px;
+  background-color: aliceblue;
+  margin-bottom: 3px;
+  border-bottom: 1px solid #333;
+}
+.item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 5px;
+  background-color: rgba(136, 136, 136, 0.4);
+  border-radius: 5px;
+}
+.img_quantity {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+.img {
+  width: 30px;
+  height: 40px;
+}
+.quantity {
+  margin: 0 10px;
+}
+.delete_btn {
+  cursor: pointer;
+}
+.totalPrice {
+  margin: 10px 0;
 }
