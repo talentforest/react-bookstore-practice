@@ -25,7 +25,7 @@ export default function Prototypes() {
               <span className={styles.author_publisher}>{author} | {publisher}</span>
             </div>
             <div className={styles.price}>
-              <div>{price}</div>
+              <div>{price.toLocaleString('ko-KR')}</div>
               <button className={styles.plus_btn} onClick={click}>
                 <i className="fas fa-plus"></i>
               </button>

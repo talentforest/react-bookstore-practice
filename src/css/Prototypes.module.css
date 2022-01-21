@@ -4,13 +4,13 @@
   justify-content: center;
   flex-wrap: wrap;
   box-sizing: border-box;
-  background-color: rgb(134, 134, 134);
+  background-color: #f2dda4;
   border-radius: 15px;
 }
 .prototype {
   background-color: rgba(256, 256, 256, 0.1);
-  box-shadow: 5px 8px 6px rgb(97, 97, 97);
-  width: 160px;
+  box-shadow: 2px 4px 5px rgb(97, 97, 97);
+  width: 140px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,20 +20,20 @@
   border-radius: 10px;
   position: relative;
 }
-.prototype:hover{
-  background-color: #FAD0C9;
+.prototype:hover {
+  background-color: #fad0c9;
   color: #333;
 }
 .detail {
-  width: 140px;
-  height: 290px;
+  width: 120px;
+  height: 240px;
 }
 .detail:hover {
   cursor: pointer;
 }
 .img {
-  width: 135px;
-  height: 200px;
+  width: 100px;
+  height: 140px;
 }
 .title {
   margin: 5px 0 3px;

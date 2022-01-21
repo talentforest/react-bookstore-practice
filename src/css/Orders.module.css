@@ -1,8 +1,8 @@
 .orders {
   display: flex;
   justify-content: center;
-  width: 20%;
-  background-color: rgb(85, 120, 151);
+  width: 200px;
+  background-color: #413c58;
 }
 .box {
   width: 90%;
@@ -11,6 +11,7 @@
   box-sizing: border-box;
   background-color: rgba(206, 206, 206, 0.8);
   border-radius: 10px;
+  font-size: 12px;
 }
 .none {
   display: block;
@@ -20,9 +21,7 @@
 }
 .items {
   padding: 4px;
-  background-color: aliceblue;
   margin-bottom: 3px;
-  border-bottom: 1px solid #333;
 }
 .item {
   width: 100%;
@@ -37,7 +36,6 @@
 .img_quantity {
   display: flex;
   align-items: center;
-  font-size: 12px;
 }
 .img {
   width: 30px;
@@ -46,9 +44,19 @@
 .quantity {
   margin: 0 10px;
 }
-.delete_btn {
+.btn_delete {
   cursor: pointer;
+  background-color: transparent;
+  border: 0px;
 }
 .totalPrice {
-  margin: 10px 0;
+  margin: 10px 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn_removeAll {
+  background-color: transparent;
+  border: 0px;
+  cursor: pointer;
 }
